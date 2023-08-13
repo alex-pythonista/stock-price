@@ -88,7 +88,7 @@ def train_model_background(self, ticker, start_date, end_date):
         model = build_lstm_model(sequence_length, num_features)
 
         epochs = 1000
-        batch_size = 1
+        batch_size = 16
 
         self.update_state(
             state='PROGRESS',
